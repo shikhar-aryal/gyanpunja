@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    animation: fadeIn 1s ease-out;
+}
+
+.contact-form .input-group {
+    margin-bottom: 15px;
+}
+
+.contact-form .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.contact-form .input-group label:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.contact-form .input-group label:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.contact-form .input-group label:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.contact-form .input-group input,
+.contact-form .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form .input-group input:focus,
+.contact-form .input-group textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact-form .input-group textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.contact-methods {
+    margin-top: 20px;
+}
+
+.contact-methods h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    color: #333;
+    animation: fadeIn 1s ease-out;
+}
+
+.contact-methods ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-methods ul li {
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.contact-methods ul li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.contact-methods ul li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.contact-methods ul li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.contact-methods ul li:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.contact-methods ul li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.contact-methods ul li a:hover {
+    color: #0056b3;
+}
+
+.contact-methods ul li a .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }   
+}
